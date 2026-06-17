@@ -95,6 +95,8 @@
 # {'type': 'cm_matrix', 'dataset': 'train', 'true_0': {"predicted_0": 15562, "predicte_1": 666}, 'true_1': {"predicted_0": 3333, "predicted_1": 1444}}
 # {'type': 'cm_matrix', 'dataset': 'test', 'true_0': {"predicted_0": 15562, "predicte_1": 650}, 'true_1': {"predicted_0": 2490, "predicted_1": 1420}}
 #
+
+# flake8: noqa: E501
 import gzip
 import json
 import os
@@ -208,5 +210,3 @@ if __name__ == "__main__":
     model.fit(x_train, y_train)
     _save_model(model)
     _compute_and_save_metrics(model, x_train, y_train, x_test, y_test)
-
-
